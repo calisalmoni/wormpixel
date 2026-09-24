@@ -1,0 +1,6 @@
+{
+  "name": "Pixel Worms - 1v1 Solucan Savaşı",
+  "description": "Mobil yatay ekran için tasarlanmış retro pixel-art 1v1 solucan savaşı oyunu. Yıkılabilir ada arazisi, bazuka atışları, rüzgar ve açı fiziği.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

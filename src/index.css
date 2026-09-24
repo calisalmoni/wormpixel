@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    touch-action: none;
+    background-color: #0b0f19;
+    font-family: 'Press Start 2P', monospace;
+  }
+}
+
+.pixel-art {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.pixel-box {
+  box-shadow: 
+    inset -3px -3px 0px 0px rgba(0, 0, 0, 0.45),
+    inset 3px 3px 0px 0px rgba(255, 255, 255, 0.25),
+    0px 4px 0px 0px rgba(0, 0, 0, 0.6);
+}
+
+.pixel-box-pressed {
+  box-shadow: 
+    inset 3px 3px 0px 0px rgba(0, 0, 0, 0.6),
+    inset -2px -2px 0px 0px rgba(255, 255, 255, 0.15);
+  transform: translateY(2px);
+}
+
+.pixel-border-gold {
+  border: 3px solid #f59e0b;
+  box-shadow: 0 0 0 2px #78350f, 0 4px 10px rgba(0,0,0,0.7);
+}
+
+.pixel-border-slate {
+  border: 3px solid #475569;
+  box-shadow: 0 0 0 2px #0f172a, 0 4px 6px rgba(0,0,0,0.5);
+}
